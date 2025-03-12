@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio webpage</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+            background: url('') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            font-family: 'Cinzel', serif;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FFD700;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 50px 10%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+            color: #FFD700;
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .course {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        form input, form textarea {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #FFD700;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #FFD700;
+        }
+
+        td {
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        audio, iframe {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PORTFOLIO</h1>
+        <p>Welcome to my webpage</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#media">A&D</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Welcome to Multimedia Webpage</h2>
+        <p>This page contains basic details, skills, an audio, and a video.</p>
+        <h3>Name: Shashvath</h3>
+        <h3>Department: CSE</h3>
+        <h3>Mobile: 1234567890</h3>
+        <h3>Email: XXX@gmail.com</h3>
+    </section>
+
+    <section id="courses">
+        <h2>Skills</h2>
+        <div class="course-container">
+            <div class="course">
+                <h3>C C++</h3>
+            </div>
+            <div class="course">
+                <h3>Java</h3>
+            </div>
+            <div class="course">
+                <h3>Python</h3>
+            </div>
+        </div>
+
+        <!-- Skills Table -->
+        <h2>Skills Table</h2>
+        <table>
+            <tr>
+                <th>Programming Language</th>
+                <th>Proficiency Level</th>
+                <th>Experience (Years)</th>
+            </tr>
+            <tr>
+                <td>C C++</td>
+                <td>Advanced</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Intermediate</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Beginner</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="media">
+        <h2>Audio & Video</h2>
+        <div class="media-container">
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/lfxoKcCkEZU?autoplay=0&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+</body>
+</html>
